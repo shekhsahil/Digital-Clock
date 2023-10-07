@@ -16,7 +16,7 @@ function updateClock() {
   if (hours > 12) {
     document.getElementById("hour").textContent = hours - 12 + "PM";
   } 
-   else if (hours = 12) {
+   else if (hours === 12) {
     document.getElementById("hour").textContent = hours  + "PM";
   } 
   else {

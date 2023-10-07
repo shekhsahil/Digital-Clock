@@ -13,9 +13,13 @@ function updateClock() {
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  if (hours >= 12) {
+  if (hours > 12) {
     document.getElementById("hour").textContent = hours - 12 + "PM";
-  } else {
+  } 
+   else if (hours = 12) {
+    document.getElementById("hour").textContent = hours  + "PM";
+  } 
+  else {
     document.getElementById("hour").textContent = hours + "AM";
   }
   document.getElementById("min").textContent = minutes + "M";

@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+h2 {
+  color: white;
+}
+.clock,
+.calendar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#hour,
+#min,
+#sec,
+#day,
+#month,
+#year {
+  margin-top: 2vh;
+  width: 25vw;
+  height: 20vh;
+  color: rgb(255, 0, 0);
+  font-size: 32px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
